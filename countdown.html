@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur à rebours</title>
+    <link rel="stylesheet" href="countdown.css">
+</head>
+<body>
+    <h1 style="color: white;">il reste : </h1>
+    <div id="countdown-container">
+        <!-- Time units for hours, minutes, seconds -->
+        <div class="time-unit">
+            <span class="time" id="hours">00</span>
+            <div class="label">Heures</div>
+        </div>
+        <div class="time-unit">
+            <span class="time" id="minutes">00</span>
+            <div class="label">Minutes</div>
+        </div>
+        <div class="time-unit">
+            <span class="time" id="seconds">00</span>
+            <div class="label">Secondes</div>
+        </div>
+    </div>
+    <!-- Separate container for days and weeks to control layout independently -->
+    <div id="extended-count">
+        <div class="time-unit">
+            <span class="time" id="days">00</span>
+            <div class="label">Jour(s)</div>
+        </div>
+        <div class="time-unit">
+            <span class="time" id="weeks">00.00</span>
+            <div class="label">Semaine(s)</div>
+        </div>
+    </div>
+    <script src="countdown.js"></script>
+</body>
+</html>
